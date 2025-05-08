@@ -1,0 +1,19 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="J$XQAcJy-[]-G/.3JlCt">Player</variable><variable type="KIND_SpriteKind" id="#ITGJ,mV;y.~:{KTLM)_">Projectile</variable><variable type="KIND_SpriteKind" id="awq|k}X[Vs$|cuP06LT`">Food</variable><variable type="KIND_SpriteKind" id=",.m0T5n_NbC?(ENdDTB.">Enemy</variable><variable id="W+C?v^k1qzY=RA{]!%Gy">npc</variable><variable id="LjJtj`ZEcOSg%!{Z74!-">npc1</variable><variable id="y[}`s~+lL{E/3Lk/iIIq">npc2</variable><variable id="X+d#VpVdM-D5NpMPj00s">npc3</variable><variable id="ywp~L]GnV_LndjM2Amw7">mySprite</variable><variable id="rP~xiFCAx;K(+ZXNXUg%">labEntered</variable><variable id="xgyZUk7rz4a{SV|YK[49">player2</variable><variable id="w3wL~%i~vKgyg[AG|f${">townMap</variable><variable id="rmA#tA_~e`*40i4DtS3m">npc4</variable><variable id="-Y-=Ui5.ncA0`8+KuYmB">npc5</variable><variable id="Z`|qp69GtFLBF0(o;Mq:">npc6</variable><variable id="`ADw]7imj`MMPS8zl#RQ">npc7</variable><variable id="#L]W=lRAac{`4TDkMVt*">npc8</variable><variable id="L{%pG^E(,zaI9^#mRbNm">npc9</variable></variables><comment id="BXa[LlzSu4#t(^3]LJHX" x="205" y="2519" w="480" h="120">
+// Change to Lab when A is pressed near final town NPC
+</comment><comment id="*BVNe;6P=Vr)0hpdgI`r" x="730" y="2519" w="480" h="120">
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+</comment><comment id="68unqEJz%JpHpDv45OYX" x="1255" y="2519" w="480" h="120">
+if (labEntered == false &amp;&amp; tiles.tileAtLocationIsWall(tiles.locationOfSprite(npc6))) {
+</comment><comment id="p~CtIq4g3!v^QNg0l4}W" x="1780" y="2519" w="170" h="120">
+labEntered = true
+</comment><comment id="kL|T:!%YNb$X16ryeP*v" x="1995" y="2519" w="310" h="120">
+tiles.setCurrentTilemap(labMap)
+</comment><comment id="28*jfO0}v/r!rYEydK#P" x="2350" y="2519" w="480" h="120">
+tiles.placeOnTile(player, tiles.getTileLocation(3, 3))
+</comment><comment id="yvbd$w|MH01%yMDmv!:f" x="2875" y="2519" w="480" h="120">
+game.splash("You enter the lab. Memories flood back...")
+</comment><comment id="oqHVgB`:!U|N6]h0G?$/" x="0" y="2519" w="160" h="120">
+}
+</comment><comment id="7kP8kClUi*pXiG*vn5Q+" x="0" y="2684" w="160" h="120">
+})
+</comment></xml>
